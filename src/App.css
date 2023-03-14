@@ -1,38 +1,76 @@
-.App {
+/*--------Navbar-----------*/
+.navbar ul {
+  float: right;
+}
+.navbar li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+}
+
+.linkItem{
+  color: black;
+  text-decoration: none;
+}
+.linkItem:hover{
+  text-decoration: underline;
+}
+.navbar{
+  width: 100%;
+  height: 50px;
+  background-color: #e0e0e0;
+}
+
+/*--------Footer--------*/
+.footer{
+  width: 100%;
+  height: 150px;
+  background-color: #e0e0e0;
+  position:absolute;
+  bottom:0px;
+}
+.footer > p{
+  margin: 10px;
+}
+
+/*----------Home-----------*/
+.homeContainer{
+  height: 100%;
+  width: 100%;
   text-align: center;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*-----introductiion-------*/
+.introductionContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.left{
+  width: 50%;
+  padding: 10px;
 }
+.right{
+  width: 50%;
+  padding: 10px;
+}
+.introductionContainer  ul{
+  list-style: none;
+}
+.introductionContainer img{
+  float: right;
+  width: 120px;
+}  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*-------form---------*/
+.formContainer{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.formContainer input{
+  width: 250px;
+}
+.formContainer textarea{
+  width: 250px;
 }
